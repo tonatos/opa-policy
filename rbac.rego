@@ -16,5 +16,6 @@ allow if {
 #	}
 # }
 valid_permission if {
-    data.users[input.user].roles[i] == "admin"
+    #data.users[input.user].roles[i] == "admin"
+    input.user == "admin"
 }
